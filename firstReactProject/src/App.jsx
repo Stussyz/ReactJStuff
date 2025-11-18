@@ -1,12 +1,15 @@
 import './App.css'
-import Article2 from './components/Article2'
-
+// child component import
+import Article3 from './components/Article3' 
+// add child component inside the parent component
 function App() {
   return (
       <div className="App">
-      <Article2 />
+      <Article3 name="Fruit" titles={["Apple", "Banana", "Watermelon"]} />
+      <br />
+      <Article3 name="Laptop" titles={["Apple", "Thinkpad", "Dell"]} />
       </div>
   )
 }
 
-export default App
+export default App;
